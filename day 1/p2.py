@@ -2,6 +2,7 @@ class Solution:
     file = open("input.txt", "r");
     sum = 0;
     
+    # Extract first occurrence of a number using find()
     def firstNum(list, line):
         tempDict = {};
         for num in list:
@@ -10,6 +11,7 @@ class Solution:
               
         return tempDict[min(tempDict.keys())]
     
+    # Extract last occurrence of a number using rfind()
     def lastNum(list, line):
         tempDict = {};
         for num in list:
